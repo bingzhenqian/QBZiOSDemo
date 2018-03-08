@@ -13,6 +13,7 @@
 		8B656280204CD67800CBFED2 /* TestThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B65627F204CD67800CBFED2 /* TestThread.m */; };
 		8B65631C204E8C1100CBFED2 /* TestLocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B65631B204E8C1100CBFED2 /* TestLocks.m */; };
 		8B65631F204FCA3A00CBFED2 /* TestRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B65631E204FCA3A00CBFED2 /* TestRunTime.m */; };
+		8B6563222050FFDA00CBFED2 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6563212050FFDA00CBFED2 /* TestBlock.m */; };
 		8B940CC320463B0800353A67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B940CC220463B0800353A67 /* AppDelegate.m */; };
 		8B940CC620463B0800353A67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B940CC520463B0800353A67 /* ViewController.m */; };
 		8B940CC920463B0800353A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B940CC720463B0800353A67 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 		8B65631B204E8C1100CBFED2 /* TestLocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocks.m; sourceTree = "<group>"; };
 		8B65631D204FCA3A00CBFED2 /* TestRunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunTime.h; sourceTree = "<group>"; };
 		8B65631E204FCA3A00CBFED2 /* TestRunTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRunTime.m; sourceTree = "<group>"; };
+		8B6563202050FFDA00CBFED2 /* TestBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
+		8B6563212050FFDA00CBFED2 /* TestBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
 		8B940CBE20463B0800353A67 /* QBZDuoXianCheng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBZDuoXianCheng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B940CC120463B0800353A67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B940CC220463B0800353A67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				8B65631B204E8C1100CBFED2 /* TestLocks.m */,
 				8B65631D204FCA3A00CBFED2 /* TestRunTime.h */,
 				8B65631E204FCA3A00CBFED2 /* TestRunTime.m */,
+				8B6563202050FFDA00CBFED2 /* TestBlock.h */,
+				8B6563212050FFDA00CBFED2 /* TestBlock.m */,
 				8B940CC720463B0800353A67 /* Main.storyboard */,
 				8B65625220484FEF00CBFED2 /* nav_arbitrate@2x.png */,
 				8B65625320484FEF00CBFED2 /* nav_arbitrate@3x.png */,
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B65631C204E8C1100CBFED2 /* TestLocks.m in Sources */,
+				8B6563222050FFDA00CBFED2 /* TestBlock.m in Sources */,
 				8B940CC620463B0800353A67 /* ViewController.m in Sources */,
 				8B65631F204FCA3A00CBFED2 /* TestRunTime.m in Sources */,
 				8B940CD120463B0800353A67 /* main.m in Sources */,

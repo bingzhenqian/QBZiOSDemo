@@ -7,7 +7,8 @@
 //
 
 #import "TestRunTime.h"
-
+#import <objc/runtime.h>
+#import <objc/NSObjCRuntime.h>
 @implementation TestRunTime
 +(instancetype)sharedInstance
 {
@@ -18,5 +19,7 @@
     });
     return sharedInstance;
 }
-
+-(void)test
+{
+}
 @end

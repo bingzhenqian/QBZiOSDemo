@@ -17,6 +17,7 @@
 #import "TestRunLoop.h"
 #import "TestThread.h"
 #import "TestLocks.h"
+#import "TestBlock.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -34,6 +35,7 @@
     [self operation];
     [self runloop];
     [self lock];
+    [self block];
 }
 
 - (void)thread
@@ -96,14 +98,31 @@
 //    [[TestLocks sharedInstance] testNSCondition];
 //    [[TestLocks sharedInstance] testNSRecursiveLock];
 //    [[TestLocks sharedInstance] testSynchronized];
-    [[TestLocks sharedInstance] testNSConditionLock];
+//    [[TestLocks sharedInstance] testNSConditionLock];
 
     
 
-    
-    
-    
 }
+
+- (void)block
+{
+//    [[TestBlock sharedInstance] testBlock];
+//    [[TestBlock sharedInstance] testBlockIvar];
+//    int number =  [[TestBlock sharedInstance] testBlockPra:^int(int a) {
+//        return a%900;
+//    }];
+//    NSLog(@"number is %d",number);
+    
+//    [[TestBlock sharedInstance] testBlockWithRe:^float(int a, int b) {
+//        NSLog(@"%d",a*b);
+//        return a*b;
+//    }];
+    [[TestBlock sharedInstance] testBlocksPra];
+//    [[TestBlock sharedInstance] testBlocksSelf];
+
+}
+
+
 - (IBAction)pressed:(id)sender {
     NSLog(@"press");
     [self.imageView performSelector:@selector(setImage:) withObject:[UIImage imageNamed:@"nav_arbitrate@2x.png"] afterDelay:4.0 inModes:@[NSDefaultRunLoopMode]];
