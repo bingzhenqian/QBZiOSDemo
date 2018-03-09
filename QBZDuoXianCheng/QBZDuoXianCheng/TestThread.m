@@ -13,7 +13,7 @@
 @end
 
 @implementation TestThread
-
+//单例
 + (instancetype)sharedInstance
 {
     static id sharedInstance = nil;

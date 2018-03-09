@@ -99,6 +99,8 @@ static int staNumber = 30;
     }];
     NSLog(@"%d",dealPra);
 
+
+
 }
 
 

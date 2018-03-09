@@ -23,7 +23,27 @@
 		8B940CD920464B5300353A67 /* TestGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B940CD820464B5300353A67 /* TestGCD.m */; };
 		8B940CDC2046A83C00353A67 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B940CDB2046A83C00353A67 /* TestOperation.m */; };
 		8B940CDF2047910200353A67 /* QBZOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B940CDE2047910200353A67 /* QBZOperation.m */; };
+		8BEE25EC20521A2F00647916 /* zhibojiaocheng.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE25EB20521A2F00647916 /* zhibojiaocheng.m */; };
+		8BEE263B20522D7500647916 /* QBZDuoXianChengUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE263A20522D7500647916 /* QBZDuoXianChengUITests.m */; };
+		8BEE264920522D8300647916 /* QBZDuoXianChengTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE264820522D8300647916 /* QBZDuoXianChengTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BEE263D20522D7500647916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B940CB620463B0800353A67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B940CBD20463B0800353A67;
+			remoteInfo = QBZDuoXianCheng;
+		};
+		8BEE264B20522D8300647916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B940CB620463B0800353A67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B940CBD20463B0800353A67;
+			remoteInfo = QBZDuoXianCheng;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8B65624F2047EAD400CBFED2 /* TestRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunLoop.h; sourceTree = "<group>"; };
@@ -54,10 +74,33 @@
 		8B940CDB2046A83C00353A67 /* TestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
 		8B940CDD2047910200353A67 /* QBZOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QBZOperation.h; sourceTree = "<group>"; };
 		8B940CDE2047910200353A67 /* QBZOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBZOperation.m; sourceTree = "<group>"; };
+		8BEE25EA20521A2F00647916 /* zhibojiaocheng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zhibojiaocheng.h; sourceTree = "<group>"; };
+		8BEE25EB20521A2F00647916 /* zhibojiaocheng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zhibojiaocheng.m; sourceTree = "<group>"; };
+		8BEE25F420522C3900647916 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8BEE263820522D7500647916 /* QBZDuoXianChengUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBZDuoXianChengUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEE263A20522D7500647916 /* QBZDuoXianChengUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBZDuoXianChengUITests.m; sourceTree = "<group>"; };
+		8BEE263C20522D7500647916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BEE264620522D8300647916 /* QBZDuoXianChengTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBZDuoXianChengTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEE264820522D8300647916 /* QBZDuoXianChengTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBZDuoXianChengTests.m; sourceTree = "<group>"; };
+		8BEE264A20522D8300647916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8B940CBB20463B0800353A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEE263520522D7500647916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEE264320522D8300647916 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,7 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				8B940CC020463B0800353A67 /* QBZDuoXianCheng */,
+				8BEE263920522D7500647916 /* QBZDuoXianChengUITests */,
+				8BEE264720522D8300647916 /* QBZDuoXianChengTests */,
 				8B940CBF20463B0800353A67 /* Products */,
+				8BEE25F320522C3900647916 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				8B940CBE20463B0800353A67 /* QBZDuoXianCheng.app */,
+				8BEE263820522D7500647916 /* QBZDuoXianChengUITests.xctest */,
+				8BEE264620522D8300647916 /* QBZDuoXianChengTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +154,8 @@
 				8B65631E204FCA3A00CBFED2 /* TestRunTime.m */,
 				8B6563202050FFDA00CBFED2 /* TestBlock.h */,
 				8B6563212050FFDA00CBFED2 /* TestBlock.m */,
+				8BEE25EA20521A2F00647916 /* zhibojiaocheng.h */,
+				8BEE25EB20521A2F00647916 /* zhibojiaocheng.m */,
 				8B940CC720463B0800353A67 /* Main.storyboard */,
 				8B65625220484FEF00CBFED2 /* nav_arbitrate@2x.png */,
 				8B65625320484FEF00CBFED2 /* nav_arbitrate@3x.png */,
@@ -115,6 +165,32 @@
 				8B940CD020463B0800353A67 /* main.m */,
 			);
 			path = QBZDuoXianCheng;
+			sourceTree = "<group>";
+		};
+		8BEE25F320522C3900647916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE25F420522C3900647916 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BEE263920522D7500647916 /* QBZDuoXianChengUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE263A20522D7500647916 /* QBZDuoXianChengUITests.m */,
+				8BEE263C20522D7500647916 /* Info.plist */,
+			);
+			path = QBZDuoXianChengUITests;
+			sourceTree = "<group>";
+		};
+		8BEE264720522D8300647916 /* QBZDuoXianChengTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BEE264820522D8300647916 /* QBZDuoXianChengTests.m */,
+				8BEE264A20522D8300647916 /* Info.plist */,
+			);
+			path = QBZDuoXianChengTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +213,42 @@
 			productReference = 8B940CBE20463B0800353A67 /* QBZDuoXianCheng.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8BEE263720522D7500647916 /* QBZDuoXianChengUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BEE263F20522D7500647916 /* Build configuration list for PBXNativeTarget "QBZDuoXianChengUITests" */;
+			buildPhases = (
+				8BEE263420522D7500647916 /* Sources */,
+				8BEE263520522D7500647916 /* Frameworks */,
+				8BEE263620522D7500647916 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BEE263E20522D7500647916 /* PBXTargetDependency */,
+			);
+			name = QBZDuoXianChengUITests;
+			productName = QBZDuoXianChengUITests;
+			productReference = 8BEE263820522D7500647916 /* QBZDuoXianChengUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8BEE264520522D8300647916 /* QBZDuoXianChengTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BEE264D20522D8300647916 /* Build configuration list for PBXNativeTarget "QBZDuoXianChengTests" */;
+			buildPhases = (
+				8BEE264220522D8300647916 /* Sources */,
+				8BEE264320522D8300647916 /* Frameworks */,
+				8BEE264420522D8300647916 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BEE264C20522D8300647916 /* PBXTargetDependency */,
+			);
+			name = QBZDuoXianChengTests;
+			productName = QBZDuoXianChengTests;
+			productReference = 8BEE264620522D8300647916 /* QBZDuoXianChengTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +261,16 @@
 					8B940CBD20463B0800353A67 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					8BEE263720522D7500647916 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B940CBD20463B0800353A67;
+					};
+					8BEE264520522D8300647916 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B940CBD20463B0800353A67;
 					};
 				};
 			};
@@ -166,6 +288,8 @@
 			projectRoot = "";
 			targets = (
 				8B940CBD20463B0800353A67 /* QBZDuoXianCheng */,
+				8BEE263720522D7500647916 /* QBZDuoXianChengUITests */,
+				8BEE264520522D8300647916 /* QBZDuoXianChengTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +307,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BEE263620522D7500647916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEE264420522D8300647916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -193,6 +331,7 @@
 				8B65631C204E8C1100CBFED2 /* TestLocks.m in Sources */,
 				8B6563222050FFDA00CBFED2 /* TestBlock.m in Sources */,
 				8B940CC620463B0800353A67 /* ViewController.m in Sources */,
+				8BEE25EC20521A2F00647916 /* zhibojiaocheng.m in Sources */,
 				8B65631F204FCA3A00CBFED2 /* TestRunTime.m in Sources */,
 				8B940CD120463B0800353A67 /* main.m in Sources */,
 				8B940CD920464B5300353A67 /* TestGCD.m in Sources */,
@@ -204,7 +343,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8BEE263420522D7500647916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BEE263B20522D7500647916 /* QBZDuoXianChengUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEE264220522D8300647916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BEE264920522D8300647916 /* QBZDuoXianChengTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BEE263E20522D7500647916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B940CBD20463B0800353A67 /* QBZDuoXianCheng */;
+			targetProxy = 8BEE263D20522D7500647916 /* PBXContainerItemProxy */;
+		};
+		8BEE264C20522D8300647916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B940CBD20463B0800353A67 /* QBZDuoXianCheng */;
+			targetProxy = 8BEE264B20522D8300647916 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B940CC720463B0800353A67 /* Main.storyboard */ = {
@@ -260,6 +428,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks ";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -315,6 +484,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks ";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -356,6 +526,60 @@
 			};
 			name = Release;
 		};
+		8BEE264020522D7500647916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QBZDuoXianChengUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qbz.QBZDuoXianChengUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QBZDuoXianCheng;
+			};
+			name = Debug;
+		};
+		8BEE264120522D7500647916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QBZDuoXianChengUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qbz.QBZDuoXianChengUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QBZDuoXianCheng;
+			};
+			name = Release;
+		};
+		8BEE264E20522D8300647916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QBZDuoXianChengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qbz.QBZDuoXianChengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBZDuoXianCheng.app/QBZDuoXianCheng";
+			};
+			name = Debug;
+		};
+		8BEE264F20522D8300647916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QBZDuoXianChengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qbz.QBZDuoXianChengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBZDuoXianCheng.app/QBZDuoXianCheng";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +597,24 @@
 			buildConfigurations = (
 				8B940CD520463B0800353A67 /* Debug */,
 				8B940CD620463B0800353A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BEE263F20522D7500647916 /* Build configuration list for PBXNativeTarget "QBZDuoXianChengUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEE264020522D7500647916 /* Debug */,
+				8BEE264120522D7500647916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BEE264D20522D8300647916 /* Build configuration list for PBXNativeTarget "QBZDuoXianChengTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEE264E20522D8300647916 /* Debug */,
+				8BEE264F20522D8300647916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
