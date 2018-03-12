@@ -25,5 +25,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pressed:(id)sender {
+    NSLog(@"button pressed");
+    sleep(5);
+    [self performSegueWithIdentifier:@"detail" sender:nil];
+}
 
 @end
