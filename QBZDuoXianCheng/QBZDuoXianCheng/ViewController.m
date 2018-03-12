@@ -18,6 +18,7 @@
 #import "TestThread.h"
 #import "TestLocks.h"
 #import "TestBlock.h"
+#import "TestRunTime.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -36,6 +37,7 @@
     [self runloop];
     [self lock];
     [self block];
+    [self runTime];
 }
 
 - (void)thread
@@ -117,9 +119,22 @@
 //        NSLog(@"%d",a*b);
 //        return a*b;
 //    }];
-    [[TestBlock sharedInstance] testBlocksPra];
+//    [[TestBlock sharedInstance] testBlocksPra];
 //    [[TestBlock sharedInstance] testBlocksSelf];
 
+}
+
+-(void)runTime
+{
+//    [[TestRunTime sharedInstance] printTest];
+//    [[TestRunTime sharedInstance] runtimeTest];
+//    [[TestRunTime sharedInstance] performSelector:@selector(run) withObject:nil];
+//    [TestRunTime performSelector:@selector(run) withObject:nil];
+//    [[TestRunTime sharedInstance] performSelector:@selector(runSub) withObject:nil];
+//    [[TestRunTime sharedInstance] performSelector:@selector(runSub1) withObject:nil];
+//    [[TestRunTime sharedInstance] performSelector:@selector(runSub2) withObject:nil];
+//    [[TestRunTime sharedInstance] addAssociateObject];
+    [[TestRunTime sharedInstance] performSelector:@selector(runrun)];
 }
 
 
