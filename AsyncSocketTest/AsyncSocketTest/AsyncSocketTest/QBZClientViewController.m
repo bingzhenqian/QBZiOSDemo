@@ -28,6 +28,7 @@
 
 - (IBAction)connect:(id)sender
 {
+    //链接socket服务
     NSError *error = nil;
     BOOL result = [self.clientSocket connectToHost:_hostTextField.text onPort:[_portTextField.text integerValue] error:&error];
     result?NSLog(@"链接成功"):NSLog(@"链接失败");
@@ -48,12 +49,14 @@
 
 - (void)addTimer
 {
+    //每隔5秒，发送心跳包，保活
     _timer = [NSTimer timerWithTimeInterval:5.0 target:self selector:@selector(jump) userInfo:nil repeats:YES];
     [_timer fire];
 }
 
 -(void)jump
 {
+    //心跳包
     NSData *data = [@"xintiao" dataUsingEncoding:NSUTF8StringEncoding];
     [self.clientSocket writeData:data withTimeout:-1 tag:0];
 

@@ -27,6 +27,7 @@
 #pragma mark - IBAction
 - (IBAction)accept:(id)sender
 {
+    //开启socket服务 Port 端口号
     NSError *error = nil;
     BOOL result = [self.serverSocket acceptOnPort:[_portTextField.text integerValue] error:&error];
     result?NSLog(@"开启成功"):NSLog(@"开启失败");
@@ -35,10 +36,11 @@
 
 - (IBAction)sendMessage:(id)sender
 {
+    
     [self sendMessage:_sendTextView.text socket:nil :sender];
 }
 
-- (IBAction)sendMessage:(NSString *)str socket:(GCDAsyncSocket *)newSocket :(id)sender
+- (void)sendMessage:(NSString *)str socket:(GCDAsyncSocket *)newSocket :(id)sender
 {
     if(!str){
         str = @"123";
@@ -47,6 +49,7 @@
     NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
     if(newSocket)
     {
+        //把数据发送给newSocket
         [newSocket writeData:data withTimeout:-1 tag:0];
         return;
     }else{
@@ -64,6 +67,7 @@
     [_socketArray addObject:newSocket];
     NSLog(@"链接成功");
     NSLog(@"%@", [NSString stringWithFormat:@"客户端 链接地址%@   端口%d",newSocket.connectedHost,newSocket.connectedPort]);
+    //链接之后开始读取数据
     [newSocket readDataWithTimeout:-1 tag:0];
     
 }
@@ -74,6 +78,7 @@
     NSLog(@"收到信息");
     NSLog(@"%@", [NSString stringWithFormat:@"客户端 链接地址%@   端口%d   信息%@",sock.connectedHost,sock.connectedPort,string]);
     _receiveTextView.text = [NSString stringWithFormat:@"客户端 链接地址%@   端口%d   信息%@",sock.connectedHost,sock.connectedPort,string];
+    //读取下一次数据 -1表示一直等待数据
     [sock readDataWithTimeout:-1 tag:0];
 }
 
