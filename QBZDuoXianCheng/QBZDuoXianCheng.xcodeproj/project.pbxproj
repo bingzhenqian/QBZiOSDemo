@@ -24,6 +24,7 @@
 		8B940CDC2046A83C00353A67 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B940CDB2046A83C00353A67 /* TestOperation.m */; };
 		8B940CDF2047910200353A67 /* QBZOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B940CDE2047910200353A67 /* QBZOperation.m */; };
 		8BEB6BE620567C5800AC1E37 /* TestKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB6BE520567C5800AC1E37 /* TestKVO.m */; };
+		8BEB6BE920575D7000AC1E37 /* TestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB6BE820575D7000AC1E37 /* TestAnimationViewController.m */; };
 		8BEE25EC20521A2F00647916 /* zhibojiaocheng.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE25EB20521A2F00647916 /* zhibojiaocheng.m */; };
 		8BEE263B20522D7500647916 /* QBZDuoXianChengUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE263A20522D7500647916 /* QBZDuoXianChengUITests.m */; };
 		8BEE264920522D8300647916 /* QBZDuoXianChengTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEE264820522D8300647916 /* QBZDuoXianChengTests.m */; };
@@ -77,6 +78,8 @@
 		8B940CDE2047910200353A67 /* QBZOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBZOperation.m; sourceTree = "<group>"; };
 		8BEB6BE420567C5800AC1E37 /* TestKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKVO.h; sourceTree = "<group>"; };
 		8BEB6BE520567C5800AC1E37 /* TestKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKVO.m; sourceTree = "<group>"; };
+		8BEB6BE720575D7000AC1E37 /* TestAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAnimationViewController.h; sourceTree = "<group>"; };
+		8BEB6BE820575D7000AC1E37 /* TestAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnimationViewController.m; sourceTree = "<group>"; };
 		8BEE25EA20521A2F00647916 /* zhibojiaocheng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zhibojiaocheng.h; sourceTree = "<group>"; };
 		8BEE25EB20521A2F00647916 /* zhibojiaocheng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zhibojiaocheng.m; sourceTree = "<group>"; };
 		8BEE25F420522C3900647916 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -159,6 +162,8 @@
 				8B6563212050FFDA00CBFED2 /* TestBlock.m */,
 				8BEB6BE420567C5800AC1E37 /* TestKVO.h */,
 				8BEB6BE520567C5800AC1E37 /* TestKVO.m */,
+				8BEB6BE720575D7000AC1E37 /* TestAnimationViewController.h */,
+				8BEB6BE820575D7000AC1E37 /* TestAnimationViewController.m */,
 				8BEE25EA20521A2F00647916 /* zhibojiaocheng.h */,
 				8BEE25EB20521A2F00647916 /* zhibojiaocheng.m */,
 				8B940CC720463B0800353A67 /* Main.storyboard */,
@@ -338,6 +343,7 @@
 				8B940CC620463B0800353A67 /* ViewController.m in Sources */,
 				8BEE25EC20521A2F00647916 /* zhibojiaocheng.m in Sources */,
 				8B65631F204FCA3A00CBFED2 /* TestRunTime.m in Sources */,
+				8BEB6BE920575D7000AC1E37 /* TestAnimationViewController.m in Sources */,
 				8B940CD120463B0800353A67 /* main.m in Sources */,
 				8B940CD920464B5300353A67 /* TestGCD.m in Sources */,
 				8B940CDF2047910200353A67 /* QBZOperation.m in Sources */,

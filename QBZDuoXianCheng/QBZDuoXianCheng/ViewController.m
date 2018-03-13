@@ -140,7 +140,7 @@
 }
 -(void)kvo
 {
-    [[TestKVO sharedInstance] testKVO];
+//    [[TestKVO sharedInstance] testKVO];
 }
 
 
