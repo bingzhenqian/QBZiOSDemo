@@ -19,6 +19,7 @@
 #import "TestLocks.h"
 #import "TestBlock.h"
 #import "TestRunTime.h"
+#import "TestKVO.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -38,6 +39,7 @@
     [self lock];
     [self block];
     [self runTime];
+    [self kvo];
 }
 
 - (void)thread
@@ -134,7 +136,11 @@
 //    [[TestRunTime sharedInstance] performSelector:@selector(runSub1) withObject:nil];
 //    [[TestRunTime sharedInstance] performSelector:@selector(runSub2) withObject:nil];
 //    [[TestRunTime sharedInstance] addAssociateObject];
-    [[TestRunTime sharedInstance] performSelector:@selector(runrun)];
+//    [[TestRunTime sharedInstance] performSelector:@selector(runrun)];
+}
+-(void)kvo
+{
+    [[TestKVO sharedInstance] testKVO];
 }
 
 
