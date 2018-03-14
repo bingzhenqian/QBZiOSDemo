@@ -15,6 +15,10 @@
 		8BDFB2F92057B78800FBEA9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFB2F82057B78800FBEA9C /* main.m */; };
 		8BDFB3032057B78800FBEA9C /* QBZTestAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFB3022057B78800FBEA9C /* QBZTestAnimationTests.m */; };
 		8BDFB30E2057B78800FBEA9C /* QBZTestAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFB30D2057B78800FBEA9C /* QBZTestAnimationUITests.m */; };
+		8BDFB31D2057C43600FBEA9C /* TestCAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFB31C2057C43600FBEA9C /* TestCAAnimationViewController.m */; };
+		8BDFB31F2058C25B00FBEA9C /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BDFB31E2058C25B00FBEA9C /* 111.png */; };
+		8BDFB3212058C2AE00FBEA9C /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BDFB3202058C2AE00FBEA9C /* 222.png */; };
+		8BDFB3242058E81B00FBEA9C /* TestUIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDFB3232058E81B00FBEA9C /* TestUIViewAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		8BDFB3092057B78800FBEA9C /* QBZTestAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBZTestAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDFB30D2057B78800FBEA9C /* QBZTestAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBZTestAnimationUITests.m; sourceTree = "<group>"; };
 		8BDFB30F2057B78800FBEA9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BDFB31B2057C43600FBEA9C /* TestCAAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCAAnimationViewController.h; sourceTree = "<group>"; };
+		8BDFB31C2057C43600FBEA9C /* TestCAAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCAAnimationViewController.m; sourceTree = "<group>"; };
+		8BDFB31E2058C25B00FBEA9C /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 111.png; path = ../../../../wwdc/412_auto_layout_techniques_in_interface_builder/111.png; sourceTree = "<group>"; };
+		8BDFB3202058C2AE00FBEA9C /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 222.png; path = "../../../../../Downloads/TSShareHelper-master/ShareMorePicToWX/222.png"; sourceTree = "<group>"; };
+		8BDFB3222058E81B00FBEA9C /* TestUIViewAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUIViewAnimationViewController.h; sourceTree = "<group>"; };
+		8BDFB3232058E81B00FBEA9C /* TestUIViewAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUIViewAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +115,15 @@
 				8BDFB2EA2057B78800FBEA9C /* AppDelegate.m */,
 				8BDFB2EC2057B78800FBEA9C /* ViewController.h */,
 				8BDFB2ED2057B78800FBEA9C /* ViewController.m */,
+				8BDFB31B2057C43600FBEA9C /* TestCAAnimationViewController.h */,
+				8BDFB31C2057C43600FBEA9C /* TestCAAnimationViewController.m */,
+				8BDFB3222058E81B00FBEA9C /* TestUIViewAnimationViewController.h */,
+				8BDFB3232058E81B00FBEA9C /* TestUIViewAnimationViewController.m */,
 				8BDFB2EF2057B78800FBEA9C /* Main.storyboard */,
 				8BDFB2F22057B78800FBEA9C /* Assets.xcassets */,
 				8BDFB2F42057B78800FBEA9C /* LaunchScreen.storyboard */,
+				8BDFB31E2058C25B00FBEA9C /* 111.png */,
+				8BDFB3202058C2AE00FBEA9C /* 222.png */,
 				8BDFB2F72057B78800FBEA9C /* Info.plist */,
 				8BDFB2F82057B78800FBEA9C /* main.m */,
 			);
@@ -239,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDFB2F62057B78800FBEA9C /* LaunchScreen.storyboard in Resources */,
+				8BDFB3212058C2AE00FBEA9C /* 222.png in Resources */,
+				8BDFB31F2058C25B00FBEA9C /* 111.png in Resources */,
 				8BDFB2F32057B78800FBEA9C /* Assets.xcassets in Resources */,
 				8BDFB2F12057B78800FBEA9C /* Main.storyboard in Resources */,
 			);
@@ -268,6 +286,8 @@
 				8BDFB2EE2057B78800FBEA9C /* ViewController.m in Sources */,
 				8BDFB2F92057B78800FBEA9C /* main.m in Sources */,
 				8BDFB2EB2057B78800FBEA9C /* AppDelegate.m in Sources */,
+				8BDFB31D2057C43600FBEA9C /* TestCAAnimationViewController.m in Sources */,
+				8BDFB3242058E81B00FBEA9C /* TestUIViewAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
