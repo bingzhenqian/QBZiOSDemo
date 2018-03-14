@@ -118,6 +118,8 @@ static int count = 0;
  shadowOpacity//阴影不透明度
  
  shadowRadius//影子半径
+ strokeStart //画线
+ strokeEnd //画线
  */
 - (IBAction)position:(id)sender
 {

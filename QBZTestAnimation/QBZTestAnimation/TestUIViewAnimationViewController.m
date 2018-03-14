@@ -4,7 +4,7 @@
 //
 //  Created by qianbingzhen on 2018/3/14.
 //  Copyright © 2018年 qian. All rights reserved.
-//
+//https://www.jianshu.com/p/5abc038e4d94
 
 #import "TestUIViewAnimationViewController.h"
 
@@ -36,7 +36,9 @@
 }
 */
 
-
+/*
+ testAnimation
+ */
 -(IBAction)testAnimation:(id)sender
 {
     
@@ -68,6 +70,9 @@
     NSLog(@"%s",__func__);
 
 }
+/*
+    testAnimationWithBlock
+ */
 -(IBAction)testAnimationWithBlock:(id)sender
 {
 //    [UIView animateWithDuration:1.0 animations:^{
@@ -126,16 +131,67 @@
 //
 //    }];
     //多个试图
-    [UIView transitionFromView:self.testView toView:self.testView1 duration:2.0 options:(UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveLinear) completion:^(BOOL finished) {
-        
+//    [UIView transitionFromView:self.testView toView:self.testView1 duration:2.0 options:(UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveLinear) completion:^(BOOL finished) {
+//
+//    }];
+    
+    // 缩放 + 透明度动画
+    self.testView.transform = CGAffineTransformMakeScale(0.1, 0.1);
+    [UIView animateWithDuration:3 animations:^{
+        self.testView.transform = CGAffineTransformMakeScale(1,1);
+        self.testView.alpha = 1.0;
+        [UIView beginAnimations:@"flash" context:nil];
+        [UIView setAnimationDuration:2];
+        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        self.testView.alpha = 0;
+        [UIView commitAnimations];
     }];
+  
+    
+}
+
+/*
+    testBezierPath
+ https://www.jianshu.com/p/c5cbb5e05075
+ */
+- (IBAction)testBezierPath:(id)sender
+{
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(100, 500)];
+    [path addLineToPoint:CGPointMake(300, 500)];
+    [path addLineToPoint:CGPointMake(300, 550)];
+    [path addQuadCurveToPoint:CGPointMake(100, 550) controlPoint:CGPointMake(200, 650)];
+    [path addLineToPoint:CGPointMake(100, 500)];
+    [path closePath];
+    CAShapeLayer*shapeLayer = [CAShapeLayer layer];
+    shapeLayer.fillColor= [UIColor clearColor].CGColor;
+    shapeLayer.strokeColor= [UIColor greenColor].CGColor;
+    shapeLayer.lineWidth=3;
+    shapeLayer.path= path.CGPath;
+    [self.view.layer addSublayer:shapeLayer];
+    CABasicAnimation *animation1 = [CABasicAnimation animationWithKeyPath:@"strokeStart"];
+    animation1.duration = 2.0;
+    animation1.fromValue = [NSNumber numberWithFloat:0.25];
+    animation1.toValue = [NSNumber numberWithFloat:0.0f];
+
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    animation.duration = 2.0;
+    animation.fromValue = [NSNumber numberWithFloat:0.5f];
+    animation.toValue = [NSNumber numberWithFloat:1.0f];
+
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.animations = @[animation1,animation];
+    group.duration = 2.0;
+    group.removedOnCompletion = NO;
+    group.fillMode = kCAFillModeForwards;
+    group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    [shapeLayer addAnimation:group forKey:nil];
+
+    
 }
 
 
-
-
-
-
+//https://www.jianshu.com/p/1bf7fc25f17e  iOS动画系列
 
 
 
