@@ -45,12 +45,12 @@
  */
 -(void)testCFRun
 {
-    NSTimer *timer = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
+//    NSTimer *timer = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
     
     //NSDefaultRunLoopMode 滑动情况下不工作
 //    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     //NSDefaultRunLoopMode 滑动情况下工作
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
     //两种情况下都工作
 //    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 

@@ -69,23 +69,23 @@
 //        [[TestGCD sharedInstance] groupEnterAndLeave];
 //        [[TestGCD sharedInstance] semaphore];
 //        [[TestGCD sharedInstance] safeThread];
-    //    [[TestGCD sharedInstance] safeThread1];
+//        [[TestGCD sharedInstance] safeThread1];
 
 }
 - (void)operation
 {
-    //    [[TestOperation sharedInstance] testNSInvocationOperation];
-    //    [[TestOperation sharedInstance] testNSBlockOperation];
+//        [[TestOperation sharedInstance] testNSInvocationOperation];
+//        [[TestOperation sharedInstance] testNSBlockOperation];
 //        [[TestOperation sharedInstance] testCustomOperation];
-    //    [[TestOperation sharedInstance] testNSOperationQueue];
-    //    [[TestOperation sharedInstance] testNSOperationQueueAddOperation];
-    //    [[TestOperation sharedInstance] testNSOperationDependency];
+//        [[TestOperation sharedInstance] testNSOperationQueue];
+//        [[TestOperation sharedInstance] testNSOperationQueueAddOperation];
+//        [[TestOperation sharedInstance] testNSOperationDependency];
 
 }
 
 - (void)runloop
 {
-    //    [[TestRunLoop sharedInstance] testCFRun];
+//    [[TestRunLoop sharedInstance] testCFRun];
 //    [[TestRunLoop sharedInstance] testCFRunLoopObserverRef];
 //    [[TestRunLoop sharedInstance] testAddThreadForever];
     
@@ -110,7 +110,7 @@
 
 - (void)block
 {
-//    [[TestBlock sharedInstance] testBlock];
+    [[TestBlock sharedInstance] testBlock];
 //    [[TestBlock sharedInstance] testBlockIvar];
 //    int number =  [[TestBlock sharedInstance] testBlockPra:^int(int a) {
 //        return a%900;

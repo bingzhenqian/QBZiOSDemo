@@ -85,7 +85,7 @@
 {
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     //maxConcurrentOperationCount 1表示串行 多个表示并发
-    queue.maxConcurrentOperationCount = 2;
+    queue.maxConcurrentOperationCount = 3;
     [queue addOperationWithBlock:^{
         [NSThread sleepForTimeInterval:1];
         NSLog(@"1   %@",[NSThread currentThread]);
@@ -127,16 +127,27 @@
 - (void)testNSOperationDependency
 {
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    queue.maxConcurrentOperationCount = 2;
     NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
-        [NSThread sleepForTimeInterval:1];
+//        [NSThread sleepForTimeInterval:1];
         NSLog(@"1   %@",[NSThread currentThread]);
 
     }];
-    NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(run) object:nil];
+//    NSInvocationOperation *op2 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(run) object:nil];
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+//        [NSThread sleepForTimeInterval:1];
+        NSLog(@"2   %@",[NSThread currentThread]);
+        
+    }];
+
     //op2在op1执行完之后执行
     [op2 addDependency:op1];
-    NSInvocationOperation *op3 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(run) object:nil];
-
+//    NSInvocationOperation *op3 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(run) object:nil];
+    NSBlockOperation *op3 = [NSBlockOperation blockOperationWithBlock:^{
+//        [NSThread sleepForTimeInterval:1];
+        NSLog(@"3   %@",[NSThread currentThread]);
+        
+    }];
     NSInvocationOperation *op4 = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(run) object:nil];
     [op3 addDependency:op2];
     [op4 addDependency:op3];

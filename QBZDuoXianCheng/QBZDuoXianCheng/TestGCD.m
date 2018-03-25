@@ -547,6 +547,14 @@
     }
 }
 
+- (void)test
+{
+    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
+    dispatch_queue_create(0, DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_create(0, DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_create(0, DISPATCH_QUEUE_c);
+
+}
 
 /*
  线程安全卖票

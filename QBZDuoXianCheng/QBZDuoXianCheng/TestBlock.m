@@ -68,6 +68,7 @@ static int staNumber = 30;
  */
 - (void)testBlocksPra
 {
+    
     //静态全局变量，全局变量，函数参数 不会被复制到block中，所以可以直接改值
     //参数变化需要用 __block标记，标记之后就是传递的指针，否则传递的是值
     //https://www.jianshu.com/p/ee9756f3d5f6

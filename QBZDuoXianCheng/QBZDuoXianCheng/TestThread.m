@@ -39,12 +39,22 @@
     
     //直接创建
     [self performSelectorInBackground:@selector(run) withObject:nil];
-    
+    //主线程中创建
+    [self performSelectorOnMainThread:@selector(run) withObject:nil waitUntilDone:NO];
+    [self performSelectorOnMainThread:@selector(run:) withObject:@5 waitUntilDone:YES];
+}
+
+- (void)run:(NSNumber *)num
+{
+    NSLog(@"%@   %@",[NSThread currentThread],num);
+    NSLog(@"run");
+
 }
 
 
 -(void)run
 {
+    NSLog(@"%@",[NSThread currentThread]);
     NSLog(@"run");
 }
 
@@ -78,13 +88,23 @@
 - (void)saleTicketInThread
 {
     _ticketNumber = 50;
+    NSThread *thread1 =  [[NSThread alloc] initWithTarget:self selector:@selector(saleTicket) object:nil];
+    NSThread *thread2 =   [[NSThread alloc] initWithTarget:self selector:@selector(saleTicket) object:nil];
+    NSThread *thread3 =   [[NSThread alloc] initWithTarget:self selector:@selector(saleTicket) object:nil];
+    thread1.name = @"thread1";
+    thread2.name = @"thread2";
+    thread3.name = @"thread3";
     [NSThread detachNewThreadSelector:@selector(saleTicket) toTarget:self withObject:nil];
     [NSThread detachNewThreadSelector:@selector(saleTicket) toTarget:self withObject:nil];
+    [thread1 start];
+    [thread2 start];
+    [thread3 start];
 }
 
 - (void)saleTicket
 {
     while(1){
+        //锁
         @synchronized(self){
             if(_ticketNumber>0){
                 _ticketNumber --;
