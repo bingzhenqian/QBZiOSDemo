@@ -84,7 +84,7 @@
 - (void)testNSOperationQueue
 {
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    //maxConcurrentOperationCount 1表示串行 多个表示并发
+    //maxConcurrentOperationCount 1表示串行 多个表示并行
     queue.maxConcurrentOperationCount = 3;
     [queue addOperationWithBlock:^{
         [NSThread sleepForTimeInterval:1];
